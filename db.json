@@ -1,4 +1,6 @@
 {
+  "products":[],
+  "orders":[],
   "intrestrates": [
     {
       "tenuretype": "months",
@@ -210,7 +212,7 @@
   "profile": {
     "name": "typicode"
   },
-  "products": [
+  "eproducts": [
     {
       "id": 1,
       "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
