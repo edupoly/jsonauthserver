@@ -9,25 +9,30 @@ server.use(bodyParser.json())
 server.use(middlewares)
 server.use((req, res, next) => {
     // console.log(req.headers)
-    var users = router.db.getState().users;
-    if(req.headers.token){
-        var x = jwt.verify(req.headers.token,"edosecretkey");
-        console.log(x)
-        next();
+    if(req.path.includes("products") && req.method==='GET'){
+            next();
     }
     else{
-        if(req.body.username){
-            if(user=users.find(user=>(user.username==req.body.username&&user.password==req.body.password))){
-                var token = jwt.sign(user, 'edosecretkey');
-                res.header('token',token)
-                res.json({msg:"loginsuccess",token,role:user.role,mobile:user.mobile})
-            }
-            else{
-                res.json({msg:"credentials mismatch"})
-            }
+        var users = router.db.getState().users;
+        if(req.headers.token){
+            var x = jwt.verify(req.headers.token,"edosecretkey");
+            console.log(x)
+            next();
         }
         else{
-            res.json({msg:'pleaselogin'})
+            if(req.body.username){
+                if(user=users.find(user=>(user.username==req.body.username&&user.password==req.body.password))){
+                    var token = jwt.sign(user, 'edosecretkey');
+                    res.header('token',token)
+                    res.json({msg:"loginsuccess",token,role:user.role,mobile:user.mobile,username:user.username,id:user.id})
+                }
+                else{
+                    res.json({msg:"credentials mismatch"})
+                }
+            }
+            else{
+                res.json({msg:'pleaselogin'})
+            }
         }
     }
 

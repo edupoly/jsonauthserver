@@ -1,6 +1,127 @@
 {
-  "products":[],
-  "orders":[],
+  "products": [
+    {
+      "name": "super1200",
+      "price": "400",
+      "imgUrl": "https://m.economictimes.com/thumb/msid-112245121,width-1200,height-900,resizemode-4,imgsize-43274/ambuja-cement.jpg",
+      "company": "Ambhuja",
+      "category": "Cement",
+      "id": 1
+    },
+    {
+      "name": "Dimond King",
+      "price": "390",
+      "imgUrl": "https://5.imimg.com/data5/LU/KD/MY-53176023/ultratech-cement.jpg",
+      "company": "UltraTech",
+      "category": "Cement",
+      "id": 2
+    },
+    {
+      "name": "Clean Turf",
+      "price": "490",
+      "imgUrl": "https://shop.hathi-sidheecements.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/s/i/sidhee-53grade-a.jpg",
+      "company": "Sidhee",
+      "category": "Cement",
+      "id": 3
+    },
+    {
+      "name": "KCP Bond",
+      "price": "320",
+      "imgUrl": "https://5.imimg.com/data5/SELLER/Default/2023/5/307660628/GS/BA/LD/34682203/kcp-shrestha.jpg",
+      "company": "KCP",
+      "category": "Cement",
+      "id": 4
+    },
+    {
+      "name": "King George 3444",
+      "price": "350",
+      "imgUrl": "https://5.imimg.com/data5/SELLER/Default/2023/1/BJ/KC/TP/181954493/kcp-cement.jpg",
+      "company": "KCP",
+      "category": "Cement",
+      "id": 5
+    },
+    {
+      "name": "53 GRADE",
+      "price": "340",
+      "imgUrl": "https://5.imimg.com/data5/SELLER/Default/2023/7/322832971/XU/ZX/BJ/35976951/kcp-cement-1-.jpg",
+      "company": "KCP",
+      "category": "Cement",
+      "id": 6
+    },
+    {
+      "name": "Rapid",
+      "price": "350",
+      "imgUrl": "https://5.imimg.com/data5/SELLER/Default/2024/2/383592880/IU/AO/UX/211531322/product-03.png",
+      "company": "KCP",
+      "category": "Cement",
+      "id": 7
+    }
+  ],
+  "orders": [
+    {
+      "username": "ramu",
+      "status": [
+        {
+          "action": "placed",
+          "timestamp": 1723171109283
+        },
+        {
+          "action": "accepted",
+          "timestamp": 1723264111227
+        },
+        {
+          "action": "dispatched",
+          "timestamp": 1723264132705
+        }
+      ],
+      "cartItems": [
+        {
+          "name": "Dimond King",
+          "price": "390",
+          "imgUrl": "https://5.imimg.com/data5/LU/KD/MY-53176023/ultratech-cement.jpg",
+          "company": "UltraTech",
+          "category": "Cement",
+          "id": 2,
+          "count": 1
+        },
+        {
+          "name": "King George 3444",
+          "price": "350",
+          "imgUrl": "https://5.imimg.com/data5/SELLER/Default/2023/1/BJ/KC/TP/181954493/kcp-cement.jpg",
+          "company": "KCP",
+          "category": "Cement",
+          "id": 5,
+          "count": 1
+        }
+      ],
+      "id": 1
+    },
+    {
+      "username": "ramu",
+      "status": [
+        {
+          "action": "placed",
+          "timestamp": 1723264090081
+        },
+        {
+          "action": "accepted",
+          "timestamp": 1723264142615
+        }
+      ],
+      "cartItems": [
+        {
+          "name": "Clean Turf",
+          "price": "490",
+          "imgUrl": "https://shop.hathi-sidheecements.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/s/i/sidhee-53grade-a.jpg",
+          "company": "Sidhee",
+          "category": "Cement",
+          "id": 3,
+          "count": 1
+        }
+      ],
+      "id": 2
+    }
+  ],
   "intrestrates": [
     {
       "tenuretype": "months",
